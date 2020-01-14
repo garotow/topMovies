@@ -15,11 +15,13 @@ struct MovieCollection: View {
     let collumns: Int = 3
     
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 10) {
-                ForEach(movies.chunked(into: collumns), id: \.self) { movies in
-                    MovieRow(movies: movies)
-                }
+        GeometryReader { geo in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 10) {
+                    ForEach(self.movies.chunked(into: self.collumns), id: \.self) { movies in
+                        MovieRow(movies: movies)
+                    }
+                }.frame(width: geo.size.width)
             }
         }
     }

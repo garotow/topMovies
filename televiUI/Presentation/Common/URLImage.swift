@@ -35,7 +35,6 @@ struct URLImage: View {
        Image(uiImage: image)
                 .renderingMode(.original)
                 .resizable()
-                .background(Color.red)
             .onAppear() {
                 self.loadImage()
             }

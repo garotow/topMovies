@@ -14,7 +14,7 @@ class MovieListViewModel: ObservableObject {
     var disposeBag: Cancellable?
     let movieService = MovieService()
     
-    @Published private(set) var movies: [MovieListVM.Movie] = []
+    @Published private(set) var movies: [MovieListVM.Movie] = [] //[MovieListVM.Movie(id: 0, imageURL: nil)]
     
     func loadMovies() {
         disposeBag = movieService.fetchMovieList()
