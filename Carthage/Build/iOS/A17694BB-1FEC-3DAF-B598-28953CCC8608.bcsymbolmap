@@ -1,0 +1,324 @@
+BCSymbolMap Version: 2.0
+-[BagelBrowser initWithConfiguration:]
+-[BagelBrowser startBrowsing]
+-[BagelBrowser netServiceBrowser:didFindService:moreComing:]
+-[BagelBrowser netServiceBrowser:didRemoveService:moreComing:]
+-[BagelBrowser netServiceDidResolveAddress:]
+-[BagelBrowser connectWithService:]
+-[BagelBrowser socket:didConnectToHost:port:]
+-[BagelBrowser sendPacket:]
+-[BagelBrowser socketDidDisconnect:withError:]
+-[BagelBrowser netServiceBrowser:didNotSearch:]
+-[BagelBrowser resetAndBrowse]
+-[BagelBrowser configuration]
+-[BagelBrowser setConfiguration:]
+-[BagelBrowser services]
+-[BagelBrowser setServices:]
+-[BagelBrowser serviceBrowser]
+-[BagelBrowser setServiceBrowser:]
+-[BagelBrowser .cxx_destruct]
+_OBJC_IVAR_$_BagelBrowser.sockets
+_OBJC_IVAR_$_BagelBrowser._configuration
+_OBJC_IVAR_$_BagelBrowser._services
+_OBJC_IVAR_$_BagelBrowser._serviceBrowser
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_GCDAsyncSocketDelegate
+l_OBJC_LABEL_PROTOCOL_$_GCDAsyncSocketDelegate
+l_OBJC_PROTOCOL_$_NSNetServiceDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSNetServiceDelegate
+l_OBJC_PROTOCOL_$_NSNetServiceBrowserDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSNetServiceBrowserDelegate
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelBrowser.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelBrowser.h
+-[BagelProjectModel initWithJSON:]
+-[BagelProjectModel toJSON]
+-[BagelProjectModel projectName]
+-[BagelProjectModel setProjectName:]
+-[BagelProjectModel .cxx_destruct]
+_OBJC_IVAR_$_BagelProjectModel._projectName
+l_OBJC_PROTOCOL_$_BagelBaseModelProtocol
+l_OBJC_LABEL_PROTOCOL_$_BagelBaseModelProtocol
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelProjectModel.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelProjectModel.h
+-[BagelRequestCarrier initWithTask:]
+-[BagelRequestCarrier initWithURLConnection:]
+-[BagelRequestCarrier setup]
+-[BagelRequestCarrier appenData:]
+-[BagelRequestCarrier complete]
+-[BagelRequestCarrier packet]
+-[BagelRequestCarrier carrierId]
+-[BagelRequestCarrier setCarrierId:]
+-[BagelRequestCarrier urlSessionTask]
+-[BagelRequestCarrier setUrlSessionTask:]
+-[BagelRequestCarrier urlConnection]
+-[BagelRequestCarrier setUrlConnection:]
+-[BagelRequestCarrier response]
+-[BagelRequestCarrier setResponse:]
+-[BagelRequestCarrier startDate]
+-[BagelRequestCarrier setStartDate:]
+-[BagelRequestCarrier endDate]
+-[BagelRequestCarrier setEndDate:]
+-[BagelRequestCarrier data]
+-[BagelRequestCarrier setData:]
+-[BagelRequestCarrier error]
+-[BagelRequestCarrier setError:]
+-[BagelRequestCarrier isCompleted]
+-[BagelRequestCarrier setIsCompleted:]
+-[BagelRequestCarrier .cxx_destruct]
+_OBJC_IVAR_$_BagelRequestCarrier._carrierId
+_OBJC_IVAR_$_BagelRequestCarrier._urlSessionTask
+_OBJC_IVAR_$_BagelRequestCarrier._urlConnection
+_OBJC_IVAR_$_BagelRequestCarrier._response
+_OBJC_IVAR_$_BagelRequestCarrier._startDate
+_OBJC_IVAR_$_BagelRequestCarrier._endDate
+_OBJC_IVAR_$_BagelRequestCarrier._data
+_OBJC_IVAR_$_BagelRequestCarrier._error
+_OBJC_IVAR_$_BagelRequestCarrier._isCompleted
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelRequestCarrier.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelRequestCarrier.h
+-[BagelRequestPacket initWithJSON:]
+-[BagelRequestPacket toJSON]
+-[BagelRequestPacket packetId]
+-[BagelRequestPacket setPacketId:]
+-[BagelRequestPacket requestInfo]
+-[BagelRequestPacket setRequestInfo:]
+-[BagelRequestPacket project]
+-[BagelRequestPacket setProject:]
+-[BagelRequestPacket device]
+-[BagelRequestPacket setDevice:]
+-[BagelRequestPacket .cxx_destruct]
+_OBJC_IVAR_$_BagelRequestPacket._packetId
+_OBJC_IVAR_$_BagelRequestPacket._requestInfo
+_OBJC_IVAR_$_BagelRequestPacket._project
+_OBJC_IVAR_$_BagelRequestPacket._device
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelRequestPacket.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelRequestPacket.h
+-[BagelURLConnectionInjector initWithDelegate:]
+-[BagelURLConnectionInjector inject]
+___36-[BagelURLConnectionInjector inject]_block_invoke
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
+-[BagelURLConnectionInjector _inject]
+-[BagelURLConnectionInjector swizzleConnectionDidReceiveResponse:]
+___66-[BagelURLConnectionInjector swizzleConnectionDidReceiveResponse:]_block_invoke
+___copy_helper_block_e4_20w
+___destroy_helper_block_e4_20w
+-[BagelURLConnectionInjector swizzleConnectionDidReceiveData:]
+___62-[BagelURLConnectionInjector swizzleConnectionDidReceiveData:]_block_invoke
+-[BagelURLConnectionInjector swizzleConnectionDidFailWithError:]
+___64-[BagelURLConnectionInjector swizzleConnectionDidFailWithError:]_block_invoke
+-[BagelURLConnectionInjector swizzleConnectionDidFinishLoading:]
+___64-[BagelURLConnectionInjector swizzleConnectionDidFinishLoading:]_block_invoke
+-[BagelURLConnectionInjector delegate]
+-[BagelURLConnectionInjector setDelegate:]
+-[BagelURLConnectionInjector .cxx_destruct]
+_inject.NSURLConnectionDelegateInjection
+___block_descriptor_24_e4_20s_e5_v4@?0l
+l_OBJC_PROTOCOL_$_NSURLConnectionDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLConnectionDelegate
+l_OBJC_PROTOCOL_$_NSURLConnectionDataDelegate
+l_OBJC_LABEL_PROTOCOL_$_NSURLConnectionDataDelegate
+l_OBJC_PROTOCOL_REFERENCE_$_NSURLConnectionDataDelegate
+l_OBJC_PROTOCOL_REFERENCE_$_NSURLConnectionDelegate
+___block_descriptor_32_e4_20w_e45_v16@?0@4@"NSURLConnection"8@"NSURLResponse"12l
+___block_descriptor_32_e4_20w_e38_v16@?0@4@"NSURLConnection"8@"NSData"12l
+___block_descriptor_32_e4_20w_e39_v16@?0@4@"NSURLConnection"8@"NSError"12l
+___block_descriptor_32_e4_20w_e27_v12@?0@4@"NSURLConnection"8l
+_OBJC_IVAR_$_BagelURLConnectionInjector._delegate
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelURLConnectionInjector.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelURLConnectionInjector.h
+__64-[BagelURLConnectionInjector swizzleConnectionDidFinishLoading:]_block_invoke
+__64-[BagelURLConnectionInjector swizzleConnectionDidFailWithError:]_block_invoke
+__62-[BagelURLConnectionInjector swizzleConnectionDidReceiveData:]_block_invoke
+__destroy_helper_block_e4_20w
+__copy_helper_block_e4_20w
+__66-[BagelURLConnectionInjector swizzleConnectionDidReceiveResponse:]_block_invoke
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
+__36-[BagelURLConnectionInjector inject]_block_invoke
+/Applications/Xcode 10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/dispatch/once.h
+-[BagelConfiguration init]
++[BagelConfiguration defaultConfiguration]
+-[BagelConfiguration project]
+-[BagelConfiguration setProject:]
+-[BagelConfiguration device]
+-[BagelConfiguration setDevice:]
+-[BagelConfiguration netservicePort]
+-[BagelConfiguration setNetservicePort:]
+-[BagelConfiguration netserviceType]
+-[BagelConfiguration setNetserviceType:]
+-[BagelConfiguration netserviceDomain]
+-[BagelConfiguration setNetserviceDomain:]
+-[BagelConfiguration netserviceName]
+-[BagelConfiguration setNetserviceName:]
+-[BagelConfiguration deepLinkStarterURL]
+-[BagelConfiguration setDeepLinkStarterURL:]
+-[BagelConfiguration publicKeyName]
+-[BagelConfiguration setPublicKeyName:]
+-[BagelConfiguration .cxx_destruct]
+_defaultConfiguration
+_OBJC_IVAR_$_BagelConfiguration._project
+_OBJC_IVAR_$_BagelConfiguration._device
+_OBJC_IVAR_$_BagelConfiguration._netservicePort
+_OBJC_IVAR_$_BagelConfiguration._netserviceType
+_OBJC_IVAR_$_BagelConfiguration._netserviceDomain
+_OBJC_IVAR_$_BagelConfiguration._netserviceName
+_OBJC_IVAR_$_BagelConfiguration._deepLinkStarterURL
+_OBJC_IVAR_$_BagelConfiguration._publicKeyName
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelConfiguration.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelConfiguration.h
++[Bagel start]
++[Bagel start:]
+-[Bagel configuration]
+-[Bagel setConfiguration:]
+-[Bagel .cxx_destruct]
+_controller
+_OBJC_IVAR_$_Bagel._configuration
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/Bagel.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/Bagel.h
++[BagelUtility UUID]
++[BagelUtility projectName]
++[BagelUtility deviceId]
++[BagelUtility deviceName]
++[BagelUtility deviceDescription]
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelUtility.m
+-[BagelRequestInfo initWithJSON:]
+-[BagelRequestInfo toJSON]
+-[BagelRequestInfo url]
+-[BagelRequestInfo setUrl:]
+-[BagelRequestInfo requestHeaders]
+-[BagelRequestInfo setRequestHeaders:]
+-[BagelRequestInfo requestBody]
+-[BagelRequestInfo setRequestBody:]
+-[BagelRequestInfo requestMethod]
+-[BagelRequestInfo setRequestMethod:]
+-[BagelRequestInfo responseHeaders]
+-[BagelRequestInfo setResponseHeaders:]
+-[BagelRequestInfo responseData]
+-[BagelRequestInfo setResponseData:]
+-[BagelRequestInfo statusCode]
+-[BagelRequestInfo setStatusCode:]
+-[BagelRequestInfo startDate]
+-[BagelRequestInfo setStartDate:]
+-[BagelRequestInfo endDate]
+-[BagelRequestInfo setEndDate:]
+-[BagelRequestInfo .cxx_destruct]
+_OBJC_IVAR_$_BagelRequestInfo._url
+_OBJC_IVAR_$_BagelRequestInfo._requestHeaders
+_OBJC_IVAR_$_BagelRequestInfo._requestBody
+_OBJC_IVAR_$_BagelRequestInfo._requestMethod
+_OBJC_IVAR_$_BagelRequestInfo._responseHeaders
+_OBJC_IVAR_$_BagelRequestInfo._responseData
+_OBJC_IVAR_$_BagelRequestInfo._statusCode
+_OBJC_IVAR_$_BagelRequestInfo._startDate
+_OBJC_IVAR_$_BagelRequestInfo._endDate
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelRequestInfo.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelRequestInfo.h
+-[BagelController initWithConfiguration:]
+-[BagelController performBlock:]
+-[BagelController carrierWithURLSessionTask:]
+-[BagelController carrierWithURLConnection:]
+-[BagelController urlSessionInjector:didStart:]
+___47-[BagelController urlSessionInjector:didStart:]_block_invoke
+___copy_helper_block_e4_20s24s
+___destroy_helper_block_e4_20s24s
+-[BagelController urlSessionInjector:didReceiveResponse:response:]
+___66-[BagelController urlSessionInjector:didReceiveResponse:response:]_block_invoke
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
+-[BagelController urlSessionInjector:didReceiveData:data:]
+___58-[BagelController urlSessionInjector:didReceiveData:data:]_block_invoke
+-[BagelController urlSessionInjector:didFinishWithError:error:]
+___63-[BagelController urlSessionInjector:didFinishWithError:error:]_block_invoke
+-[BagelController urlConnectionInjector:didReceiveResponse:response:]
+___69-[BagelController urlConnectionInjector:didReceiveResponse:response:]_block_invoke
+-[BagelController urlConnectionInjector:didReceiveData:data:]
+___61-[BagelController urlConnectionInjector:didReceiveData:data:]_block_invoke
+-[BagelController urlConnectionInjector:didFailWithError:error:]
+___64-[BagelController urlConnectionInjector:didFailWithError:error:]_block_invoke
+-[BagelController urlConnectionInjector:didFinishLoading:]
+___58-[BagelController urlConnectionInjector:didFinishLoading:]_block_invoke
+-[BagelController sendCarrier:]
+-[BagelController configuration]
+-[BagelController setConfiguration:]
+-[BagelController browser]
+-[BagelController setBrowser:]
+-[BagelController urlSessionInjector]
+-[BagelController setUrlSessionInjector:]
+-[BagelController urlConnectionInjector]
+-[BagelController setUrlConnectionInjector:]
+-[BagelController carriers]
+-[BagelController setCarriers:]
+-[BagelController .cxx_destruct]
+_OBJC_IVAR_$_BagelController._queue
+___block_descriptor_28_e4_20s24s_e5_v4@?0l
+___block_descriptor_32_e4_20s24s28s_e5_v4@?0l
+_OBJC_IVAR_$_BagelController._configuration
+_OBJC_IVAR_$_BagelController._browser
+_OBJC_IVAR_$_BagelController._urlSessionInjector
+_OBJC_IVAR_$_BagelController._urlConnectionInjector
+_OBJC_IVAR_$_BagelController._carriers
+l_OBJC_PROTOCOL_$_BagelURLSessionInjectorDelegate
+l_OBJC_LABEL_PROTOCOL_$_BagelURLSessionInjectorDelegate
+l_OBJC_PROTOCOL_$_BagelURLConnectionInjectorDelegate
+l_OBJC_LABEL_PROTOCOL_$_BagelURLConnectionInjectorDelegate
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelController.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelController.h
+__58-[BagelController urlConnectionInjector:didFinishLoading:]_block_invoke
+__64-[BagelController urlConnectionInjector:didFailWithError:error:]_block_invoke
+__61-[BagelController urlConnectionInjector:didReceiveData:data:]_block_invoke
+__69-[BagelController urlConnectionInjector:didReceiveResponse:response:]_block_invoke
+__63-[BagelController urlSessionInjector:didFinishWithError:error:]_block_invoke
+__58-[BagelController urlSessionInjector:didReceiveData:data:]_block_invoke
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
+__66-[BagelController urlSessionInjector:didReceiveResponse:response:]_block_invoke
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20s24s
+__47-[BagelController urlSessionInjector:didStart:]_block_invoke
+-[BagelURLSessionInjector initWithDelegate:]
+-[BagelURLSessionInjector inject]
+___33-[BagelURLSessionInjector inject]_block_invoke
+-[BagelURLSessionInjector _inject]
+-[BagelURLSessionInjector swizzleSessionTaskResume:]
+___52-[BagelURLSessionInjector swizzleSessionTaskResume:]_block_invoke
+-[BagelURLSessionInjector swizzleSessionDidReceiveResponse:]
+___60-[BagelURLSessionInjector swizzleSessionDidReceiveResponse:]_block_invoke
+-[BagelURLSessionInjector swizzleSessionDidReceiveData:]
+___56-[BagelURLSessionInjector swizzleSessionDidReceiveData:]_block_invoke
+-[BagelURLSessionInjector swizzleSessiondDidFinishWithError:]
+___61-[BagelURLSessionInjector swizzleSessiondDidFinishWithError:]_block_invoke
+-[BagelURLSessionInjector delegate]
+-[BagelURLSessionInjector setDelegate:]
+-[BagelURLSessionInjector .cxx_destruct]
+_inject.NSURLSessionInjectionOnce
+___block_descriptor_32_e4_20w_e7_v8@?0@4l
+___block_descriptor_32_e4_20w_e13_v16@?0@4@8c12l
+___block_descriptor_32_e4_20w_e10_v12@?0@4@8l
+_OBJC_IVAR_$_BagelURLSessionInjector._delegate
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelURLSessionInjector.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelURLSessionInjector.h
+__61-[BagelURLSessionInjector swizzleSessiondDidFinishWithError:]_block_invoke
+__56-[BagelURLSessionInjector swizzleSessionDidReceiveData:]_block_invoke
+__60-[BagelURLSessionInjector swizzleSessionDidReceiveResponse:]_block_invoke
+__52-[BagelURLSessionInjector swizzleSessionTaskResume:]_block_invoke
+__33-[BagelURLSessionInjector inject]_block_invoke
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelBaseModel.m
+-[BagelDeviceModel initWithJSON:]
+-[BagelDeviceModel toJSON]
+-[BagelDeviceModel deviceId]
+-[BagelDeviceModel setDeviceId:]
+-[BagelDeviceModel deviceName]
+-[BagelDeviceModel setDeviceName:]
+-[BagelDeviceModel deviceDescription]
+-[BagelDeviceModel setDeviceDescription:]
+-[BagelDeviceModel .cxx_destruct]
+_OBJC_IVAR_$_BagelDeviceModel._deviceId
+_OBJC_IVAR_$_BagelDeviceModel._deviceName
+_OBJC_IVAR_$_BagelDeviceModel._deviceDescription
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelDeviceModel.m
+/Users/henriquelima/Documents/Workspace/televiUI/Carthage/Checkouts/Bagel/iOS/Source/BagelDeviceModel.h
+/Users/henriquelima/Library/Caches/org.carthage.CarthageKit/DerivedData/10.2.1_10E1001/Bagel/1.3.2/Build/Intermediates.noindex/ArchiveIntermediates/Bagel/IntermediateBuildFilesPath/Bagel.build/Release-iphoneos/Bagel.build/DerivedSources/Bagel_vers.c

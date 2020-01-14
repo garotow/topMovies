@@ -11,6 +11,10 @@
 		8456DF5C23CCFC31006DED05 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456DF5B23CCFC31006DED05 /* MovieDetailViewModel.swift */; };
 		8456DF5F23CD05D1006DED05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456DF5E23CD05D1006DED05 /* Movie.swift */; };
 		8456DF6123CD0850006DED05 /* MovieDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8456DF6023CD0850006DED05 /* MovieDetailVM.swift */; };
+		846F63FC23CE2F8100CCD6A0 /* Bagel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846F63FB23CE2F8100CCD6A0 /* Bagel.framework */; };
+		846F63FD23CE2F8100CCD6A0 /* Bagel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 846F63FB23CE2F8100CCD6A0 /* Bagel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		846F640023CE2F8300CCD6A0 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846F63FF23CE2F8300CCD6A0 /* CocoaAsyncSocket.framework */; };
+		846F640123CE2F8300CCD6A0 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 846F63FF23CE2F8300CCD6A0 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84AD6C9B23C612D50065A6CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD6C9A23C612D50065A6CD /* AppDelegate.swift */; };
 		84AD6C9D23C612D50065A6CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD6C9C23C612D50065A6CD /* SceneDelegate.swift */; };
 		84AD6C9F23C612D50065A6CD /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AD6C9E23C612D50065A6CD /* MovieListView.swift */; };
@@ -47,11 +51,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		846F63FE23CE2F8100CCD6A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				846F640123CE2F8300CCD6A0 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+				846F63FD23CE2F8100CCD6A0 /* Bagel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8456DF5923CCACE4006DED05 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		8456DF5B23CCFC31006DED05 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		8456DF5E23CD05D1006DED05 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8456DF6023CD0850006DED05 /* MovieDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVM.swift; sourceTree = "<group>"; };
+		846F63F923CE2F7300CCD6A0 /* Bagel.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Bagel.framework.dSYM; path = Carthage/Build/iOS/Bagel.framework.dSYM; sourceTree = "<group>"; };
+		846F63FA23CE2F7A00CCD6A0 /* CocoaAsyncSocket.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CocoaAsyncSocket.framework.dSYM; path = Carthage/Build/iOS/CocoaAsyncSocket.framework.dSYM; sourceTree = "<group>"; };
+		846F63FB23CE2F8100CCD6A0 /* Bagel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bagel.framework; path = Carthage/Build/iOS/Bagel.framework; sourceTree = "<group>"; };
+		846F63FF23CE2F8300CCD6A0 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		84AD6C9723C612D50065A6CD /* televiUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = televiUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AD6C9A23C612D50065A6CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84AD6C9C23C612D50065A6CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846F640023CE2F8300CCD6A0 /* CocoaAsyncSocket.framework in Frameworks */,
+				846F63FC23CE2F8100CCD6A0 /* Bagel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +146,17 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		846F63F823CE2F7300CCD6A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				846F63FF23CE2F8300CCD6A0 /* CocoaAsyncSocket.framework */,
+				846F63FB23CE2F8100CCD6A0 /* Bagel.framework */,
+				846F63FA23CE2F7A00CCD6A0 /* CocoaAsyncSocket.framework.dSYM */,
+				846F63F923CE2F7300CCD6A0 /* Bagel.framework.dSYM */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84AD6C8E23C612D50065A6CD = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +164,7 @@
 				84AD6CB023C612DD0065A6CD /* televiUITests */,
 				84AD6CBB23C612DD0065A6CD /* televiUIUITests */,
 				84AD6C9823C612D50065A6CD /* Products */,
+				846F63F823CE2F7300CCD6A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +294,8 @@
 				84AD6C9323C612D50065A6CD /* Sources */,
 				84AD6C9423C612D50065A6CD /* Frameworks */,
 				84AD6C9523C612D50065A6CD /* Resources */,
+				846F63F723CE2F2C00CCD6A0 /* Run Script Carthage */,
+				846F63FE23CE2F8100CCD6A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +411,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		846F63F723CE2F2C00CCD6A0 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Bagel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+			);
+			name = "Run Script Carthage";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84AD6C9323C612D50065A6CD /* Sources */ = {
@@ -561,6 +624,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"televiUI/Common/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = televiUI/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,6 +647,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"televiUI/Common/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = televiUI/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
