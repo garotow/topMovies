@@ -10,7 +10,8 @@ import SwiftUI
 
 struct MovieDetailView: View {
     var id: Int
-    var viewModel = MovieDetailViewModel()
+    
+    @ObservedObject var viewModel = MovieDetailViewModel()
     
     var body: some View {
         VStack {
