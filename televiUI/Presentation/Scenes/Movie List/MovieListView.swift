@@ -17,7 +17,7 @@ struct MovieListView: View {
         NavigationView {
             MovieCollection(movies: self.viewModel.movies)
                 .navigationBarTitle("Movies")
-        }.onAppear{ self.viewModel.loadMovies() }
+        }.onAppear { self.viewModel.loadMovies() }
     }
 }
 
