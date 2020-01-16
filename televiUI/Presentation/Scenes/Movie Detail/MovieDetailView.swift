@@ -14,31 +14,38 @@ struct MovieDetailView: View {
     @ObservedObject var viewModel = MovieDetailViewModel()
     
     var body: some View {
-        VStack {
+        ScrollView {
             URLImage(url: URL(string:""))
                 .frame(height: 300.0)
-            // Line 1
-            HStack {
-                Text("Title:")
-                Text(viewModel.movie.title)
+            
+            VStack(spacing: 5.0) {
+                // Title
+                HStack {
+                    Text("Title:")
+                        .fontWeight(.semibold)
+                    Text(viewModel.movie.title)
+                    Spacer()
+                }
+            
+                // Release Date
+                HStack {
+                    Text("Release Date:")
+                        .fontWeight(.semibold)
+                    Text(viewModel.movie.releaseDate)
+                    Spacer()
+                    
+                }
+                // Overview
+                HStack {
+                    Text("Overview:")
+                        .fontWeight(.semibold)
+                    Spacer()
+                }
+                Text(viewModel.movie.overview)
                 Spacer()
-            }
-            // Line 2
-            HStack {
-                Text("Release Date:")
-                Text(viewModel.movie.releaseDate)
-                Spacer()
-                
-            }
-            // Line 3
-            HStack {
-                Text("Overview:")
-                Spacer()
-            }
-            Text(viewModel.movie.overview)
-            Spacer()
-        }.padding()
-        .navigationBarTitle(viewModel.movie.title)
+            }.padding()
+        }
+        .navigationBarTitle("\(viewModel.movie.title)", displayMode: .inline)
         .onAppear {
             self.viewModel.loadMovieDetail(id: self.id)
         }
